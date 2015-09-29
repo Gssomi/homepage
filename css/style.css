@@ -1,0 +1,69 @@
+body {
+	background: #1C1C1C;
+}
+div.navbar.navbar-inverse.navbar-static-top {
+	background: #23282B;
+}
+i.fa.fa-linux{
+	color: #230D21;
+}
+span.name-page {
+	color: #ffffff;
+	font-family: Arial;
+	font-weight: lighter;
+}
+a.fa.fa-home {
+	color: #ffffff;
+}
+span.datatime {
+	height: 5px;
+	color: #ffffff;
+	width: 200px;
+}
+span.user {
+	color: #ffffff;
+}
+h2.form-signin-heading {
+	color: #ffffff;
+}
+div.checkbox {
+	color: #ffffff;
+}
+hr {
+	border-color: #23282B;
+}
+div.text {
+	color: #8B8C7A;
+}
+div.comments h3 {
+	color: #1FCECB;
+}
+h4.login {
+	padding: 5px 14px;
+	text-decoration: none;
+	background-color: #23282B;
+	border: 1px solid #ddd;
+  	border-radius: 15px;
+}
+div.comment p {
+	color: #F5DEB3;
+}
+
+div.add_comment input, .add_comment textarea {
+	padding: 5px 14px;
+	background-color: #23282B;
+	border: 1px solid #ddd;
+  	border-radius: 15px;
+  	width: 350px;
+  	color: #F5DEB3;
+}
+button#send {
+	width: 100px;
+	border: 1px solid #ddd;
+  	border-radius: 15px;
+  	background-color: #23282B;
+  	color: #1FCECB;
+}
+div.lan_list h3 {
+	color: #1FCECB;
+}

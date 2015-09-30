@@ -6,7 +6,21 @@ div.navbar.navbar-inverse.navbar-static-top {
 }
 div.nav_mini {
 	margin: 0px 5px 0px 15px;
-
+}
+img#nav_str {
+	padding-top: 1px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-transition: All 0.5s slow;
+	-moz-transition: All 0.5s slow;
+	-o-transition: All 0.5s slow;
+	-ms-transition: All 0.5s slow;
+	transition: All 0.5s slow;
+	height: 30px;
+}	
+img#nav_str:hover {
+	width: 130px;
 }
 div.col-md-9 > i {
 	color: #230D21;
@@ -49,15 +63,26 @@ div.text {
 	color: #8B8C7A;
 	padding-right: 0px;
 }
-
+div.text > h3 {
+	color: #F5DEB3;
+	font-family: inherit;
+}
 div.text > img {
 	margin-bottom: 15px;
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	padding: 2px 2px;
 }
-div.comments h3 {
+h3#com_text {
 	color: #1FCECB;
+	width: 320px;
+	padding-left: 50px;
+}
+div.comments {
+	padding-left: 50px;
+	overflow-y: auto;
+	width: 400px;
+	height: 600px;
 }
 div.comments hr {
 	width: 320px;
@@ -69,17 +94,17 @@ h4.login {
 	border: 1px solid #ddd;
   	border-radius: 15px;
 }
-div.comments {
-	padding-left: 50px;
-	width: 320px;
-}
 div.comment {
 	width: 320px;
 }
 div.comment p {
 	color: #F5DEB3;
 }
-
+div.add_comment {
+	padding-left: 50px;
+	width: 320px;
+	margin-top: 40px;
+}
 div.add_comment input, .add_comment textarea {
 	padding: 5px 14px;
 	background-color: #23282B;

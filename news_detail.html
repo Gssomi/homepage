@@ -38,10 +38,10 @@
       <div class="nav">
         <div class="row">
           <div class="col-md-2 nav_mini">
-            <a href="#"><img src="http://placehold.it/30x30" alt="" class="img-circle"/></a><br/>
-            <a href="#"><img src="http://placehold.it/30x30" alt="" class="img-circle"/></a><br/> 
-            <a href="#"><img src="http://placehold.it/30x30" alt="" class="img-circle"/></a><br/> 
-            <a href="#"><img src="http://placehold.it/30x30" alt="" class="img-circle"/></a><br/> 
+            <a href="#"><img src="http://placehold.it/30x30" alt="" id="nav_str"/></a><br/>
+            <a href="#"><img src="http://placehold.it/30x30" alt="" id="nav_str"/></a><br/> 
+            <a href="#"><img src="http://placehold.it/30x30" alt="" id="nav_str"/></a><br/> 
+            <a href="#"><img src="http://placehold.it/30x30" alt="" id="nav_str"/></a><br/> 
           </div>
           <div class="col-md-6">
            <img src="http://placehold.it/600x120" alt=""/>
@@ -59,30 +59,49 @@
           <img src="http://placehold.it/765x320" alt=""/>
           <p>Процесс написания тестов для кода, взаимодействующего с БД, практически не отличается от процедуры тестирования обычных классов PHP. Сначала необходимо создать тестовый класс, наследующий PHPUnit_Extensions_Database_TestCase (класс PHPUnit_Extensions_Database_TestCase сам при этом наследует PHPUnit_Framework_TestCase), который будет содержать тесты для методов тестируемого класса. Затем создать тестовые методы, начинающиеся с префикса test, а потом скормить этот код phpunit с указанием имени тестового класса. Отличия заключаются лишь в том, что в тестовом классе обязательно необходимо реализовать два публичных метода — getConnection() и getDataSet(). Первый метод необходим для того, чтобы научить DbUnit работать с БД (придется использовать PDO), а второй для того, чтобы сообщить фреймворку, в какое состояние переводить базу данных перед выполнением очередного теста. Под DataSet в терминологии DbUnit понимается набор из одной или более таблиц.</p> 
           <p>Как говорилось выше, перед выполнением очередного теста (представленного методом в тестовом классе), PHPUnit вызывает специальный метод setUp(), чтобы сэмулировать среду выполнения для объекта тестируемого класса. В случае DbUnit реализация по умолчанию метода setUp() уже не пустая. Если говорить в общих чертах, то внутри метода setUp() будет создан некий объект databaseTester, который, используя определенный нами метод getConnection(), переведет базу в состояние, представленное набором таблиц (DataSet`ом), получаемым при вызове метода getDataSet(). Если вы были внимательны, то реализация метода getDataSet() также должна предоставляться тестовым классом, т.е. нами. В результате получим похожую последовательность вызовов</p>
+          <p>Как говорилось выше, перед выполнением очередного теста (представленного методом в тестовом классе), PHPUnit вызывает специальный метод setUp(), чтобы сэмулировать среду выполнения для объекта тестируемого класса. В случае DbUnit реализация по умолчанию метода setUp() уже не пустая. Если говорить в общих чертах, то внутри метода setUp() будет создан некий объект databaseTester, который, используя определенный нами метод getConnection(), переведет базу в состояние, представленное набором таблиц (DataSet`ом), получаемым при вызове метода getDataSet(). Если вы были внимательны, то реализация метода getDataSet() также должна предоставляться тестовым классом, т.е. нами. В результате получим похожую последовательность вызовов</p>
+          <p>Как говорилось выше, перед выполнением очередного теста (представленного методом в тестовом классе), PHPUnit вызывает специальный метод setUp(), чтобы сэмулировать среду выполнения для объекта тестируемого класса. В случае DbUnit реализация по умолчанию метода setUp() уже не пустая. Если говорить в общих чертах, то внутри метода setUp() будет создан некий объект databaseTester, который, используя определенный нами метод getConnection(), переведет базу в состояние, представленное набором таблиц (DataSet`ом), получаемым при вызове метода getDataSet(). Если вы были внимательны, то реализация метода getDataSet() также должна предоставляться тестовым классом, т.е. нами. В результате получим похожую последовательность вызовов</p>
         </div>
-        <div class="col-md-4 comments">
-          <h3>Комментарии к тексту</h3>
-          <hr> 
-          <div class="comment">
-            <h4 class="login"><a href="#">Cookie</a></h4>
-            <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+        <div class="col-md-4">
+          <h3 id="com_text">Комментарии к тексту</h3>
+          <div class="comments">
+            <hr> 
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
+            <div class="comment">
+              <h4 class="login"><a href="#">Cookie</a></h4>
+              <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
+            </div>
+            <hr>
           </div>
-          <hr>
-          <div class="comment">
-            <h4 class="login"><a href="#">Cookie</a></h4>
-            <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
-          </div>
-          <hr>
-          <div class="comment">
-            <h4 class="login"><a href="#">Cookie</a></h4>
-            <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
-          </div>
-          <hr>
-          <div class="comment">
-            <h4 class="login"><a href="#">Cookie</a></h4>
-            <p>лошыф шоыф шрфы рш фшрв рвышгрвшр ф дш дфдво uidhi audh u fhuihsd kjdkj ;dj</p>
-          </div>
-          <hr>
           <div class="add_comment" id="comment_form">
             <div>
               <input type="text" name="login" id="login" value="" placeholder="Login">    

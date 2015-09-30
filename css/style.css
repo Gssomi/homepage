@@ -4,24 +4,37 @@ body {
 div.navbar.navbar-inverse.navbar-static-top {
 	background: #23282B;
 }
-i.fa.fa-linux{
+div.nav_mini {
+	margin: 0px 5px 0px 15px;
+
+}
+div.col-md-9 > i {
 	color: #230D21;
+	margin: 0px 5px 0px 15px ;
 }
-span.name-page {
+div.col-md-9 > span{
 	color: #ffffff;
-	font-family: Arial;
+	font-family: 'Myriad Pro',Arial, Helvetica, sans-serif;
 	font-weight: lighter;
+	font-size: 20px;
 }
-a.fa.fa-home {
+div.home > a {
 	color: #ffffff;
+	margin: 0px 5px 0px 5px;
 }
-span.datatime {
+div.home > span {
 	height: 5px;
 	color: #ffffff;
 	width: 200px;
+	margin: 0px 5px 0px 5px;
 }
-span.user {
+span.user > i {
 	color: #ffffff;
+	padding-right: 5px; 
+}
+form.form-signin {
+	margin-left: 40px;
+	margin-right: -100px;
 }
 h2.form-signin-heading {
 	color: #ffffff;
@@ -34,16 +47,34 @@ hr {
 }
 div.text {
 	color: #8B8C7A;
+	padding-right: 0px;
+}
+
+div.text > img {
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	padding: 2px 2px;
 }
 div.comments h3 {
 	color: #1FCECB;
 }
+div.comments hr {
+	width: 320px;
+}
 h4.login {
-	padding: 5px 14px;
+	padding: 3px 14px;
 	text-decoration: none;
 	background-color: #23282B;
 	border: 1px solid #ddd;
   	border-radius: 15px;
+}
+div.comments {
+	padding-left: 50px;
+	width: 320px;
+}
+div.comment {
+	width: 320px;
 }
 div.comment p {
 	color: #F5DEB3;
@@ -54,7 +85,7 @@ div.add_comment input, .add_comment textarea {
 	background-color: #23282B;
 	border: 1px solid #ddd;
   	border-radius: 15px;
-  	width: 350px;
+  	width: 320px;
   	color: #F5DEB3;
 }
 button#send {
@@ -64,6 +95,15 @@ button#send {
   	background-color: #23282B;
   	color: #1FCECB;
 }
+div.lan_list {
+	padding-left: 65px;
+}
 div.lan_list h3 {
 	color: #1FCECB;
+}
+img.media-object {
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	padding: 1px 1px;
 }

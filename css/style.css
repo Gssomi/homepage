@@ -62,6 +62,7 @@ hr {
 div.text {
 	color: #8B8C7A;
 	padding-right: 0px;
+	margin-bottom: 20px;
 }
 div.text > h3 {
 	color: #F5DEB3;
@@ -80,9 +81,8 @@ h3#com_text {
 }
 div.comments {
 	padding-left: 50px;
-	overflow-y: auto;
 	width: 400px;
-	height: 600px;
+	height: 600px; 
 }
 div.comments hr {
 	width: 320px;
@@ -96,6 +96,10 @@ h4.login {
 }
 div.comment {
 	width: 320px;
+}
+#com_scroll {
+	color: #ffffff;
+	overflow-y: scroll;
 }
 div.comment p {
 	color: #F5DEB3;
@@ -131,4 +135,16 @@ img.media-object {
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	padding: 1px 1px;
+}
+#all_news {
+	margin: 15px 15px 0px 705px;
+	width: 100px;
+	border: 1px solid #ddd;
+  	border-radius: 15px;
+  	background-color: #23282B;
+  	color: #1FCECB;
+}
+
+#all_news > a > span {
+	padding-left: 10px;
 }

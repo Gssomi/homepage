@@ -148,3 +148,28 @@ img.media-object {
 #all_news > a > span {
 	padding-left: 10px;
 }
+td {
+	color: #1FCECB;
+}
+form.users_list {
+	padding-left: 15px;
+}
+form.users_list > input {
+	width: 250px;
+	border: 1px solid #ddd;
+  	border-radius: 15px;
+  	background-color: #23282B;
+  	color: #1FCECB;
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+  	padding-left: 15px;
+}
+.users_list span > input {
+	width: 90px;
+	border: 1px solid #ddd;
+  	border-radius: 15px;
+  	background-color: #23282B;
+  	color: #1FCECB;
+  	padding-top: 5px; 
+  	padding-bottom: 5px;
+} 
